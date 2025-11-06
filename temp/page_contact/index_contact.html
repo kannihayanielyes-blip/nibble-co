@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link href="./CSS/index_contact.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+    <div class="grille_page">  
+        <header>
+
+
+          <div class="logo">
+            <a href="index_contact.html"><img src="./image/nibble_no.png"  id="icon"> </a>
+          </div>
+                                    <div class="navbar"id="navbar" >
+                                        <ul id="screenlist">
+                                       <li> <a id ="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        
+                                        </ul> 
+                                    </div>
+                                <div class="burger" id="bg">
+                                    
+                                        <div class="navbar" id="nav" style="display: none;" >
+                                    <ul>
+                                       <li> <a  id="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        
+                                    </ul> 
+                                        </div>
+                                </div>
+
+
+    </header>   
+
+        <div class="contact"> 
+    <h1> Nous contacter</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur ut nulla incidunt, adipisci quisquam ipsum corporis aspernatur explicabo? Eligendi nobis dolorum quo, corrupti neque optio recusandae? Earum, qui perferendis?</p>
+        </div>
+
+        <form class="formulaire" action="https://httpbin.org/post" method="post">
+
+            <h3 id="contact"> Gardons contact!</h3>
+            <input id="barre_email" type="text" value="email">
+            <br>
+            <br>
+            <label> Recevoir notre newsletter ?</label>
+            <p>
+            <input id="reponse1" type="radio" name="newsletter" value="oui">
+            <label> oui</label>
+            <br>
+            <input id="reponse2" type="radio" name="newsletter" value="non">
+            <label> non</label>
+            <br>
+            <br>
+            <label> Vous êtes: </label>
+            <select name="Options">
+                <option value="option1"> Un particulier </option>
+                <option value="option2"> Une entreprise </option>
+            </select>
+            <br>
+            <br>
+            <textarea name="zone de saisie"></textarea>
+            <br>
+            <br>
+            <button id= "envoyer" type="submit"> envoyer le formulaire </button>
+            </p>
+        </form>
+
+       <script>
+            let burger = document.getElementById("bg");
+            let navbar = document.getElementById("nav");
+
+            burger.addEventListener("click", () => {
+
+                navbar.style.display = (navbar.style.display === "none" || navbar.style.display === "")
+                    ? "flex"
+                    : "none";
+            });
+        </script>
+</div>
+
+</body>
