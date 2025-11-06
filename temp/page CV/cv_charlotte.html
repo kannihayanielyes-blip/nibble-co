@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modèle CV</title>
+    <link href="./CSS/cv_charlotte.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+    <div class="grid_page">
+
+        <header>
+
+
+            <div class="logo">
+                <a href="index.html"><img src="./image/nibble_no.png" id="icon" alt="logo"> </a>
+            </div>
+            <div class="navbar" id="navbar">
+                <ul id="screenlist">
+                    <li> <a id="SK" href="#compétence">Accueil</a> </li>
+                    <li> <a id="EX" href="#exp">Présentation </a> </li>
+
+                </ul>
+            </div>
+            <div class="burger" id="bg">
+
+                <div class="navbar" id="nav" style="display: none;">
+                    <ul>
+                        <li> <a id="SK" href="#compétence">Accueil</a> </li>
+                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </header>
+
+        <div class="nom">
+            <h1>BOUYAT Charlotte</h1>
+        </div>
+
+        <div class="Introduction">
+            <p> Professionnelle en reconversion vers le développement de logiciels et d’applications, je mets à profit
+                mon expérience de cinq ans dans la conception et la mise en œuvre de politiques publiques en faveur de
+                la jeunesse, ainsi qu’une année dans le développement des circuits courts et la promotion de
+                l’agriculture paysanne. Curieuse, rigoureuse et animée par le goût de la création, je souhaite
+                aujourd’hui allier mes compétences en gestion de projets et mon intérêt pour la technologie afin de
+                concevoir des outils numériques utiles et accessibles.</p>
+        </div>
+
+        <div class="photo">
+            <img src="./image/charlotte.webp" id="personnage" alt="perso">
+        </div>
+
+
+        <div class="coordonnees">
+            <h2>Coordonnées</h2>
+            <br>
+            <p> 30/01/1996</p>
+            <p>Grenoble, France</p>
+            <p>charlotte.bouyat@le-campus-numerique.fr</p>
+            <p> +33 6 18 42 55 78</p>
+        </div>
+
+        <div class="hobbies">
+            <h2>Hobbies</h2>
+            <p> Montagne: Escalade</p>
+            <p> Musique: Piano</p>
+        </div>
+
+
+        <div class="etudes">
+            <h2>Formation</h2>
+            <p>Licence développeur de logiciels et d'applications</p>
+            <p>Master en Sciences Politiques - IEP de Toulouse</p>
+            <p>Licence en Sciences Politiques - Lyon II Lumière</p>
+            <p>DE IEP de Lyon: Amérique Latine et Caraïbes</p>
+        </div>
+
+        <div class="competences">
+            <h2>Skills</h2>
+            <p> HTML/CSS, utilisation de Notion</p>
+            <p> Outils excel</p>
+            <p> Gestion de projet</p>
+            <p> Animation de réseau d'acteurs</p>
+        </div>
+
+        <div class="professional">
+            <h2> Professionnal experience</h2>
+            <p> 2022-2025 Cadre - Conseillère d'éducation populaire et de jeunesse - SDJES 38</p>
+            <p> 2020-2022 Cadre - Conseilèère d'éducation populaire et de jeunesse - SDJES 26 </p>
+            <p> 2019-2020 Chargée de développement et animatrice du réseau des AMAP de l'Isère </p>
+
+        </div>
+
+        <div class="contact">
+            <h2> Contact</h2>
+            <p> nous contacter.fr</p>
+        </div>
+
+        <script>
+
+
+            let burger = document.getElementById("bg");
+            let navbar = document.getElementById("nav");
+
+            burger.addEventListener("click", () => {
+
+                navbar.style.display = (navbar.style.display === "none" || navbar.style.display === "")
+                    ? "flex"
+                    : "none";
+            });
+        </script>
+
+    </div>
+
+</body>
+
+</html>
