@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modèle CV</title>
+    <link href="/css/modele_cv.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+<div class="colonne1">
+
+</div>
+
+<div class="grid_page">
+
+    <header>
+
+
+          <div class="logo">
+            <a href="index.html"><img src="/images/nibble_no.png"  id="icon"> </a>
+          </div>
+                                    <div class="navbar"id="navbar" >
+                                        <ul id="screenlist">
+                                       <li> <a id ="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        <li> <a id="EX" href="#boutique">Boutique </a> </li>    
+                                        
+                                        </ul> 
+                                    </div>
+                                <div class="burger" id="bg">
+                                    
+                                        <div class="navbar" id="nav" style="display: none;" >
+                                    <ul>
+                                       <li> <a  id="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        <li> <a id="EX" href="#boutique">Boutique </a> </li> 
+                                        
+                                    </ul> 
+                                        </div>
+                                </div>
+
+
+    </header>   
+
+    <div class="nom">
+        <h1>VAUD Martin</h1>
+    </div>
+
+    <div class="Introduction">
+            <p> Description du développeur Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, reprehenderit non maiores amet blanditiis mollitia itaque, a ipsa sequi necessitatibus rerum et vitae repudiandae voluptatibus. Eius enim ex distinctio modi.</p>   
+    </div>
+
+    <div class="photo">            
+         <img src="/images/martin.png" id="personnage">
+    </div>
+        
+
+     <div class="coordonnees"> 
+         <h2>Coordonnées</h2>
+        <br>
+        <p> 27/02/1996</p>
+        <p>Grenoble, France</p>
+        <p>vaud.martin@gmail.com</p>
+        <p> 06 46 00 11 32</p>
+    </div>
+        
+    <div class="hobbies"> 
+        <h2>Hobbies</h2>
+        <p> Ecouter de la musique et un peu de lorem aussi</p>
+    </div>
+    
+
+    <div class="etudes">
+    <h2>Formation</h2>
+    <p>Concepteur Designer ui/ux
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         Vero iste voluptatum autem molestiae qui veritatis nemo iure,
+          delectus natus, quam dignissimos ea, ad animi consequatur des
+          erunt distinctio. Odio, sint blanditiis?
+    </p>
+    </div>
+                    
+    <div class="competences">
+    <h2>Skills</h2>
+    <p>Html ave beaucoup de lorem</p>
+    </div>
+                
+    <div class="professional">
+    <h2> Professionnal experience</h2>
+    <p> Alternance Taxis lyonnais
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam earum maxime commodi ea placeat quia recusandae accusamus nobis, quo dolor ullam quos impedit fugit nulla optio quidem quaerat assumenda.
+         </p>
+    </div>
+
+    <div class="contact">
+        <h2> Contact</h2>
+        <p>vaud.martin@gmail.com<br>
+           06 46 00 11 32
+              </p>
+    </div>
+
+      <script>
+  
+
+  let burger = document.getElementById("bg");
+  let navbar = document.getElementById("nav");
+
+  burger.addEventListener("click", () => {
+    
+    navbar.style.display =(navbar.style.display === "none" || navbar.style.display === "") 
+        ? "flex" 
+        : "none";
+  });
+</script>
+
+
+
+</div>
+
+</body>
+
+</html>
