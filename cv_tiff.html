@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CV de Tiffanie Simon-Chautemps</title>
+    <link href="./modele_cv.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+    <div class="colonne1">
+
+    </div>
+
+    <div class="grid_page">
+
+        <header>
+
+
+            <div class="logo">
+                <a href="index.html"><img src="./nibble_no.png" id="icon"> </a>
+            </div>
+            <div class="navbar" id="navbar">
+                <ul id="screenlist">
+                    <li> <a id="SK" href="#compétence">Accueil</a> </li>
+                    <li> <a id="EX" href="#exp">Présentation </a> </li>
+
+                </ul>
+            </div>
+            <div class="burger" id="bg">
+
+                <div class="navbar" id="nav" style="display: none;">
+                    <ul>
+                        <li> <a id="SK" href="#compétence">Accueil</a> </li>
+                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </header>
+
+        <div class="nom">
+            <h1>SIMON-CHAUTEMPS Tiffanie</h1>
+        </div>
+
+        <div class="Introduction">
+            <p> Je suis en cours de reconversion professionnelle dans le développement informatique. Depuis toute petite
+                j'adore voir des personnes coder dans des films ou des séries. Mon premier cours d'HTML/CSS en DUT m'a
+                aidé à me rendre compte que je voulais travailler dans ce domaine.</p>
+        </div>
+
+        <div class="photo">
+            <img src="./tiff.webp" id="personnage">
+        </div>
+
+
+        <div class="coordonnees">
+            <h2>Coordonnées</h2>
+            <br>
+            <p> 22/06/1990</p>
+            <p>Grenoble, France</p>
+            <p>simonchautemps.tiffanie@gmail.com</p>
+            <p> +33 6 67 82 51 19</p>
+        </div>
+
+        <div class="hobbies">
+            <h2>Hobbies</h2>
+            <p>Jeux videos, pilates, series & films, pole dance, lecture</p>
+        </div>
+
+
+        <div class="etudes">
+            <h2>Formation</h2>
+            <p>Formation développeur avancé & IA</p>
+            <p>DUT Information-Communication option GIDO</p>
+        </div>
+
+        <div class="competences">
+            <h2>Skills</h2>
+            <p>HTML/CSS, visual code studio, Ubuntu</p>
+        </div>
+
+        <div class="professional">
+            <h2> Professionnal experience</h2>
+            <p> 2013-2025 Gestionnaire documentaire</p>
+        </div>
+
+        <div class="contact">
+            <h2> Contact</h2>
+            <p> nous contacter.fr</p>
+        </div>
+
+        <script>
+
+
+            let burger = document.getElementById("bg");
+            let navbar = document.getElementById("nav");
+
+            burger.addEventListener("click", () => {
+
+                navbar.style.display = (navbar.style.display === "none" || navbar.style.display === "")
+                    ? "flex"
+                    : "none";
+            });
+        </script>
+
+
+
+    </div>
+
+</body>
+
+</html>
