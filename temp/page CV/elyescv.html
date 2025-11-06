@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> ElyesCV</title>
+    <link href="./modele_cv.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+<div class="colonne1">
+
+</div>
+
+<div class="grid_page">
+
+    <header>
+
+
+          <div class="logo">
+            <a href="elyescv.html"><img src="/photo/nibble_no.png"  id="icon"> </a>
+          </div>
+                                    <div class="navbar"id="navbar" >
+                                        <ul id="screenlist">
+                                       <li> <a id ="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        
+                                        </ul> 
+                                    </div>
+                                <div class="burger" id="bg">
+                                    
+                                        <div class="navbar" id="nav" style="display: none;" >
+                                    <ul>
+                                       <li> <a  id="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        
+                                    </ul> 
+                                        </div>
+                                </div>
+
+
+    </header>   
+
+    <div class="nom">
+        <h1>Kanni Hayani Elyes</h1>
+    </div>
+
+    <div class="Introduction">
+            <p> Description du développeur Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, reprehenderit non maiores amet blanditiis mollitia itaque, a ipsa sequi necessitatibus rerum et vitae repudiandae voluptatibus. Eius enim ex distinctio modi.</p>   
+    </div>
+
+    <div class="photo">            
+         <img src="./personnages/elyes.webp" id="personnage">
+    </div>
+        
+
+     <div class="coordonnees"> 
+         <h2>Coordonnées</h2>
+        <br>
+        <p> 25/12/2005</p>
+        <p>Grenoble, France</p>
+        <p>elyes.kanni-hayani@le-campus-numerique.fr</p>
+        <p> +33 7 98 34 84 65</p>
+    </div>
+        
+    <div class="hobbies"> 
+        <h2>Hobbies</h2>
+        <p>Sport - Bivouac - Jeux vidéos - Lecture</p>
+    </div>
+    
+
+    <div class="etudes">
+    <h2>Formation</h2>
+    <p>Baccalauréat - Formation Premier secours</p>
+    </div>
+                    
+    <div class="competences">
+    <h2>Skills</h2>
+    <p>Logiciel = Notion - Suite adobe - Framer</p>
+    </div>
+                
+    <div class="professional">
+    <h2> Professionnal experience</h2>
+    <p> Hopital - IME - CEA - Piscine</p>
+    </div>
+
+    <div class="contact">
+        <h2> Contact</h2>
+        <p> nibble@gmail.fr</p>
+    </div>
+
+      <script>
+  
+
+  let burger = document.getElementById("bg");
+  let navbar = document.getElementById("nav");
+
+  burger.addEventListener("click", () => {
+    
+    navbar.style.display =(navbar.style.display === "none" || navbar.style.display === "") 
+        ? "flex" 
+        : "none";
+  });
+</script>
+
+
+
+</div>
+
+</body>
+
+</html>

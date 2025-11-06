@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Nibble & Co</title>
+
+<link href="collab.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="/images/nibble_no.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="UTF-8">
+
+
+
+</head>
+
+
+<body> 
+
+
+    <header>
+
+
+          <div class="logo">
+            <a href="index.html"><img src="./images/nibble_no.png"  id="icon"> </a>
+          </div>
+                                    <div class="navbar"id="navbar" >
+                                        <ul id="screenlist">
+                                       <li> <a id ="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        
+                                        </ul> 
+                                    </div>
+                                <div class="burger" id="bg">
+                                    
+                                        <div class="navbar" id="nav" style="display: none;" >
+                                    <ul>
+                                       <li> <a  id="SK" href="#compétence">Accueil</a> </li>
+                                        <li> <a id="EX" href="#exp">Présentation </a> </li>
+                                        
+                                    </ul> 
+                                        </div>
+                                </div>
+
+
+    </header>   
+
+
+    <div class="container">
+
+                <div class="title">
+                        <h1 id="main">Nibble & Co</h1>
+                        <h1 id="titrecache">Nibble & Co</h1>
+                </div>
+
+                        <div class="photo">
+                            <img src="./images/corpo.png" id="corpo">
+                        </div>
+
+        <div class="histoire" id="hist">
+
+                <h2>Notre histoire</h2>
+            <p id="description">
+
+
+Tout a commencé sur les bancs d’une école d’informatique, où quatre passionnés de code se sont rencontrés autour d’un même rêve : construire, innover, et apprendre ensemble.<br>
+De hackathons en projets d’études, l’envie de créer leur propre univers numérique est vite
+ devenue une évidence.  <br>
+
+Il y a un an, <strong> Nibble & Co </strong> est née — une petite équipe animée par la curiosité, le partage et la volonté
+ de donner vie à des idées, une ligne de code à la fois.</p>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+  
+
+  let burger = document.getElementById("bg");
+  let navbar = document.getElementById("nav");
+
+  burger.addEventListener("click", () => {
+    
+    navbar.style.display =(navbar.style.display === "none" || navbar.style.display === "") 
+        ? "flex" 
+        : "none";
+  });
+
+
+
+
+</script>
+    </body>
