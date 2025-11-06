@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Momo+Signature&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Momo+Signature&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.colonne1 {
+    column-rule-color: beige;
+
+}
+
+.grid_page {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 15vw);
+    justify-items: center;
+    text-align: center;
+}
+
+
+header {
+    grid-column: 1/3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: flex-start;
+    background: #cebebe7d;
+}
+
+.logo {
+    width: 8vW;
+    height: 12vh;
+    margin-bottom: 4vh
+}
+
+img#icon {
+    width: 100%;
+    background-size: cover;
+}
+
+h1 {
+
+    font-size: 2em;
+    font-family: "Poppins", serif;
+}
+
+h2 {
+
+    font-size: 1.5em;
+    font-family: "Poppins", serif;
+}
+
+h1,
+h2 {
+    color: #E8D4C0;
+}
+
+p {
+    font-family: "Lora";
+    font-size: 1em;
+    line-height: 1.7em;
+
+}
+
+div#navbar {
+    display: none;
+}
+
+div#bg {
+    width: 10vh;
+    height: 9vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2vh;
+    margin-top: 3vh;
+    position: sticky;
+    background-image: url(../image/burger_bar.png);
+
+}
+
+ul {
+    display: flex;
+    width: 50vw;
+    margin-top: 12vh;
+    flex-direction: column;
+    list-style-type: none;
+    background: #E8D4C0;
+    z-index: 2;
+    border-bottom-right-radius: 3em;
+    position: fixed;
+    font-family: "Poppins", regular;
+}
+
+a#EX,
+a#SK {
+    text-decoration: none;
+    color: #E5A989;
+    font-size: 2em;
+}
+
+p#description {
+    margin-left: 5vw;
+}
+
+.nom {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    top: 10vw
+}
+
+.Introduction {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+#personnage {
+    width: 17vw;
+    height: 40vh;
+    border-radius: 5vw;
+    position: relative;
+    bottom: 10vw;
+
+}
+
+.photo {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+
+.coordonnees {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etudes {
+    grid-column: 2/3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.competences {
+    grid-column: 3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobbies {
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.professional {
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact {
+    grid-column: 2;
+    grid-row: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
